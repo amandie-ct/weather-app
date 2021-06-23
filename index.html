@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4cd8c58f6d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Weather Forecast App</title>
+    <link rel="icon" href="img/partly-cloudy-day-haze.svg" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+    <!-- container principal -->
+    <div class="container">
+        <!-- barra de navegação -->
+        <nav class="top-bar">
+            <div class="level-left">
+                <h1>Weather Forecast</h1>
+                <img src="img/horizon.svg" class="title-icon">
+            </div>
+            <div class="level-right">
+                <form>
+                    <input name="city" type="text" placeholder="Enter a city...">
+                    <button><i class="fas fa-search" id="search-button"></i></button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- informações principais -->
+        <section class="main">
+            <img src="img/main-img.jpg" class="time">
+            <img src="img/1.svg" id="forecast">
+            <div class="details">
+                <h1>Location</h1>
+                <h1>Temperature &deg;C</h1>
+                <h1>Forecast name</h1>
+            </div>
+        </section>
+    </div>
+
+    <!-- Javascript -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/forecast.js"></script>
+</body>
+
+</html>
